@@ -13,7 +13,7 @@ import java.util.Map;
 @Controller
 public class StockController {
 
-    @GetMapping("/")
+    @GetMapping("/stocks")
     public String index(@RequestParam(name = "price", required = false) Double price, Model model) {
         Map<String, String> tickers = new LinkedHashMap<>();
         tickers.put("NVDL", "GraniteShares 2x Long NVDA Daily ETF");
